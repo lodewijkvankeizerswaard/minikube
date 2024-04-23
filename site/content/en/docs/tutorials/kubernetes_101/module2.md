@@ -30,7 +30,9 @@ Here we see the available nodes (1 in our case). Kubernetes will choose where to
 
 ## Step 2 - Deploy our app
 
-Let's deploy our first app on Kubernetes with the `kubectl create deployment` command. We need to provide the deployment name and app image location (include the full repository url for images hosted outside Docker Hub).
+Let's deploy our first app on Kubernetes with the `kubectl create deployment` command. We need to provide the deployment name and app image location (include the full repository url for images hosted outside Docker Hub). 
+
+_Note: The image below is incompatible with the ARM architecture (e.g. Apple Silicon). If you are using an ARM-based machine, please consider following the [Basic Controls](https://minikube.sigs.k8s.io/docs/handbook/controls/) to get setup._
 
 ```shell
 kubectl create deployment kubernetes-bootcamp --image=gcr.io/google-samples/kubernetes-bootcamp:v1
